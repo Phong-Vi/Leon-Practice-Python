@@ -1,2 +1,4 @@
 # Leon-Practice-Python
-Python practical work exercises at school by Léon.
+
+## Purpose
+Python practical work exercises at school by Léon 🚀
