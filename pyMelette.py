@@ -68,9 +68,9 @@ if (heat_stove=='Y' or heat_stove=='y'):
     print(f"Good job! Now, add {some_oil} gram of oil into the pan.")
     beat_eggs = input("Are eggs beaten by your whisk? (Y/N)\n")
     if (beat_eggs=='Y' or beat_eggs=='y'):
-        print("Great! Now, pour the beaten eggs into the oiled pan.")
+        print(f"Great! Now, pour {eggs} the beaten eggs into the oiled pan.")
         print("Congratulations!!! Your omlette will be ready in 1 minute. Enjoy your lunch!")
     else:
-        print("You should beat eggs first with your whisk.")
+        print(f"You should beat {eggs} eggs first with your whisk.")
 else:
     print("So, what are you waiting for? Hurry up!")
