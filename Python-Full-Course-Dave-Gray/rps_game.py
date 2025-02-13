@@ -19,16 +19,30 @@ def determine_winner(user_choice, computer_choice):
     else:
         return "You lose 👎!"
 
-def play_game():
+def play_game(user_name):
     user_choice = get_user_choice()
     computer_choice = get_computer_choice()
-    print(f"You chose: {user_choice}")
+    print(f"You ({user_name}) chose: {user_choice}")
     print(f"Computer chose: {computer_choice}")
     result = determine_winner(user_choice, computer_choice)
     print(result)
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Provide a personalized game experience."
+    )
+
+    parser.add_argument(
+        "-n", "--name", metavar="name",
+        required=False,
+        default="PlayerOne",
+        help="The name of the person playing the game."
+    )
+
+    args = parser.parse_args()
+
     for game in range(1, 4):
-        print(f"GAME {game}:")
-        play_game()
-        print('')
+        print(f"\nGAME {game}:")
+        play_game(args.name)
