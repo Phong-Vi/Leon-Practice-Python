@@ -1,0 +1,23 @@
+#####    Request Weather and Publish on Web Application    #####
+##### https://www.youtube.com/watch?v=H2EJuAcrZYU&t=27976s #####
+
+# install virtual environment
+python3 -m venv .venv
+
+# activate virtual environment
+source .venv/bin/activate
+
+# install packages
+pip install requests python-dotenv Flask
+
+# install and update pip
+python3 -m pip install -U pip
+
+# create requirements.txt for future deployment
+pip freeze > requirements.txt
+
+# create .gitignore then init git
+git init
+
+# install package waitress
+pip install waitress
