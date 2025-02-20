@@ -1,0 +1,20 @@
+# Setup virtual environment (for this project)
+# cd virtual_env
+python3 -m venv .venv
+
+# Activate virtual environment
+source .venv/bin/activate
+#deactivate
+
+# Install requests & python-dotenv
+pip install requests
+# pip install -U requests   # update
+# pip uninstall requests    # uninstall
+# pip show requests
+
+pip install python-dotenv
+
+# Create requirements.txt
+pip freeze > requirements.txt
+
+# Create .gitignore (for ignoring .venv and .env)
